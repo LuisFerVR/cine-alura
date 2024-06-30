@@ -1,4 +1,8 @@
+import Cabecera from "../../components/Cabecera/Cabecera";
+
 function Inicio (){
-    return <h1>Inicio</h1>
+    return (
+        <Cabecera/>
+    )
 }
 export default Inicio;
