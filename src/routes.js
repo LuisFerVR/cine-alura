@@ -5,6 +5,8 @@ import Cabecera from "./components/Cabecera/Cabecera";
 import Container from "./components/Container";
 import Pie from "./components/Footer";
 import FavoritoProvider from "./components/context/Favoritos";
+import Player from "pages/Player";
+import NotFound from "pages";
 
 function AppRoutes(){
     return(
@@ -15,6 +17,8 @@ function AppRoutes(){
                     <Routes>
                         <Route path="/" element={<Inicio />}></Route>
                         <Route path="/favoritos" element={<Favoritos />}></Route>
+                        <Route path="/:id" element={<Player/>}></Route>
+                        <Route path="*" element={<NotFound/>}></Route>
                     </Routes>
                 </FavoritoProvider>
             </Container>
