@@ -17,9 +17,9 @@ function Player(){
             setVideo(...data)
         })
     },[]);
-    //const video = videos.find(video=>video.id==Number(parametros.id))
-    console.log(video);
+
     if(!video) return <NotFound/>
+    
     return(
         <>
             <Banner img="player" color="#58B9AE"/>
